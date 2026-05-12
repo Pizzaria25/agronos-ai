@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: #0a0a0f;
+    color: #e8e8ed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #4ade80, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #16a34a, #4ade80);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .card {
+    max-width: 500px;
+  }
+}
